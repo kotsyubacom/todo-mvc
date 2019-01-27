@@ -1,0 +1,252 @@
+body {
+  background-color: #f5f5f5;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header {
+  height: 120px;
+  font-size: 100px;
+  font-weight: 100;
+  color: rgba(175, 47, 47, 0.15);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.enter-task {
+  margin: 0 auto;
+  width: 550px;
+  height: 65px;
+  background-color: white;
+  border-top: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+/*  box-shadow: inset 5px 0px 10px 3px #ccc;*/
+}
+
+.all-done-icon {
+  width: 60px;
+  height: 65px;
+  float: left;
+  background: none;
+  border-style: none;
+  outline: none;
+  padding: 0px 0px;
+  opacity: 0.5;
+}
+
+.all-done-icon:active {
+  opacity: 1;
+}
+
+.input-container {
+  width: 490px;
+  height: 100%;
+  float: left;
+}
+
+.input-text::placeholder {
+  font-size: 24px;
+  font-style: italic;
+  font-family: "Helvetica";
+  color: #e6e5e8;
+  outline: none;
+}
+
+textarea:focus, .input-text:focus {
+  outline: none;
+}
+
+.input-text {
+  font-size: 24px;
+  font-family: "Helvetica";
+  color: #4d4d4d;
+  text-align: left;
+  width: 474px;
+  height: 63px;
+  border-style: none;
+  size: 200px;
+}
+
+.task {
+  position: relative;
+  margin: 0 auto;
+  width: 550px;
+  height: 60px;
+  background-color: white;
+  border-top: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+}
+
+.mark-in-progress {
+  width: 60px;
+  height: 100%;
+  float: left;
+  background: none;
+  border-style: none;
+  outline: none;
+  padding: 0px 0px;
+  opacity: 0.5;
+}
+
+.mark-in-progress:active {
+  opacity: 1;
+}
+
+.text {
+  width: 490px;
+  height: 100%;
+  float: left;
+}
+
+.text p {
+  font-size: 24px;
+  font-family: "Helvetica";
+  color: #4d4d4d;
+  padding: 15px 15px 15px 0px;
+  margin: 0px 0px; /*почему есть margin? почему не выстраивается текст по vertical-align: middle?*/
+}
+
+.cross {
+  position: absolute;
+  right: 0px;
+  width: 60px;
+  height: 100%;
+  float: left;
+  width: 60px;
+  height: 100%;
+  background: none;
+  border-style: none;
+  outline: none;
+  padding: 0px 0px;
+  opacity: 0;
+}
+
+.task:hover .cross {
+  opacity: 0.5;
+}
+
+.task .cross:hover {
+  opacity: 1;
+}
+
+.info {
+  position: relative;
+  margin: 0 auto;
+  width: 550px;
+  height: 40px;
+  background-color: white;
+  font-size: 14px;
+  font-family: "Helvetica";
+  color: #4d4d4d;
+  border: 1px solid #ededed;
+}
+
+.count-tasks {
+  float: left;
+  padding-top: 12px;
+  padding-left: 15px;
+  margin-right: 100px;
+}
+
+.info button {
+  font-size: 14px;
+  font-family: "Helvetica";
+}
+
+.info-all {
+  float: left;
+  width: 32px;
+  margin-right: 10px;
+  margin-top: 11px;
+  background: none;
+  border-style: none;
+}
+
+.info-all:hover {
+  margin-top: 6px;
+  margin-right: 10px;
+  background: none;
+  border: 0.5px solid rgba(175, 47, 47, 0.15);
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+.info-active {
+  float: left;
+  width: 55px;
+  margin-right: 10px;
+  padding-top: 12px;
+  background: none;
+  border-style: none;
+}
+
+.info-active:hover {
+  margin-top: 6px;
+  margin-right: 10px;
+  background: none;
+  border: 0.5px solid rgba(175, 47, 47, 0.15);
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+.info-completed {
+  float: left;
+  width: 84px;
+  margin-right: 10px;
+  padding-top: 12px;
+  background: none;
+  border-style: none;
+}
+
+.info-completed:hover {
+  margin-top: 6px;
+  margin-right: 10px;
+  background: none;
+  border: 0.5px solid rgba(175, 47, 47, 0.15);
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+.info-back-1 {
+    position: absolute;
+    top: 40px;
+    left: 2px;
+    width: 544px;
+    height: 5px;
+    background-color: white;
+    border: 1px solid #ededed;
+    z-index: 200;
+}
+
+.info-back-2 {
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    width: 538px;
+    height: 5px;
+    background-color: white;
+    border: 1px solid #ededed;
+    z-index: 100;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 10px;
+  color: #bfbfbf
+}
+
+.edit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.created {
+  margin-bottom: 10px;
+}
+
+
+/*
+- Как складываются высоты, ширины, кнопки, рамки, толщины, маргины и паддинги?
+*/
